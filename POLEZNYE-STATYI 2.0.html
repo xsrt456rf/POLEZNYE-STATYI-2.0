@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+<head>
+    <meta charset= "UTF-8">
+    <title>POLEZNYE-STATYI 2.0 </title>
+    <link rel= "stylesheet" href="style.css">
+    
+    <body>
+        <h1 style= "color:white;">POLEZNYE-STATYI 2.0</h1>  
+
+
+
+
+
+
+</style>
+
+<div class="tab">
+  <input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
+  <label for="tab-btn-1">ЗОЖ</label>
+  <input id="tab-btn-2" name="tab-btn" type="radio" value="">
+  <label for="tab-btn-2">Онлайн Бизнес</label>
+  <input id="tab-btn-3" name="tab-btn" type="radio" value="">
+  <label for="tab-btn-3">Психология Людей</label>
+  <div class="tab-content" id="content-1">
+    Советы для здоровья без врачей:
+1)Калистеника+ кардио — упражнения с собственным весом для сжигания жира, поддержки иммунитета и гормонов. Уличные тренировки зимой ещё эффективнее для иммунитета и метаболизма.
+2)Витамин D3 — важен для иммунитета, помогает при запорах и частых простудах.
+3)Авиарежим на телефоне — снижает воздействие электромагнитных полей (ЭМП). Помимо этого, следует держать монитор компьютера или ноутбука подальше от тела, чтобы избежать токсичного действия ЭМП.
+4)Правильное питание — употребляйте медленные углеводы, достаточно белков и жиров для сохранения ресурсов организма.
+
+
+  </div>
+  <div class="tab-content" id="content-2">
+   Методы монетизации:
+1)Продажа услуг или товаров через блоги
+2)Донаты — поддержка аудитории.
+3)Google AdSense — показ рекламы на сайте или блоге.
+  
+
+
+  </div>
+  <div class="tab-content" id="content-3">
+    Темная триада
+«Тёмная триада» — это три личностных черты, которые часто встречаются вместе и характеризуются социально нежелательным поведением:
+
+1)Нарциссизм — склонность к чувству собственного превосходства, потребность в восхищении и отсутствие эмпатии. Нарциссы часто преувеличивают свои достижения и стремятся командовать.
+2)Психопатия — эмоциональная холодность, безразличие к чувствам других и антисоциальное поведение. Психопаты могут получать удовольствие от насильственных действий или страданий других людей.
+3)Макиавеллизм — циничное отношение к морали, ориентация на личную выгоду и готовность использовать других людей в своих целях. Макиавеллисты — искусные манипуляторы, которые видят в людях лишь инструмент.
+Несмотря на отличия, все трое склонны к манипуляции.
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+
+
+
+   
+        <style>
+            body {
+                background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/216667c2-e427-4dda-96a6-f5a6558ebbdf/dh878kc-20c3fda8-2451-4b95-9438-1b2e038a55d5.jpg/v1/fill/w_1024,h_615,q_75,strp/anime_city_at_sunset_by_criativedreamer_dh878kc-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIxNjY2N2MyLWU0MjctNGRkYS05NmE2LWY1YTY1NThlYmJkZlwvZGg4NzhrYy0yMGMzZmRhOC0yNDUxLTRiOTUtOTQzOC0xYjJlMDM4YTU1ZDUuanBnIiwiaGVpZ2h0IjoiPD02MTUiLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8yMTY2NjdjMi1lNDI3LTRkZGEtOTZhNi1mNWE2NTU4ZWJiZGZcL2NyaWF0aXZlZHJlYW1lci00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.Biw7p3d1su2ahNR39p0__5mg0Uc9k_xDOifPhB9EN8M');
+                 background-size: 1000px 1000px; 
+                
+     }
+
+      
+
+
+
+
+
+
+
+
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab > input[type="radio"] {
+  display: none;
+}
+
+.tab-content {
+  display: none;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+  display: block;
+}
+
+.tab > label {
+  display: block;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  text-decoration: none;
+  color: #ffffff;
+  border: 0;
+  border-radius: 0.375rem;
+  background: 0 0;
+}
+
+.tab > input[type="radio"]:checked + label {
+  cursor: default;
+  color: #fff;
+  background-color: #ff035b;
+}
+
+
+
+
+
+
