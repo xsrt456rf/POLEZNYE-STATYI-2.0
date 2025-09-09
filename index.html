@@ -1126,6 +1126,8 @@ body{
   min-height: 100% !important;
 }
 
+
+
 /* Перебиваем inline color (делаем наследуемым) */
 *[style*="color"]{
   color: inherit !important;
@@ -1200,11 +1202,49 @@ img:hover{ transform: scale(1.05) translateY(-4px) !important; box-shadow:0 8px 
 
 /* Убедимся, что ссылки/заголовки в карточках читаемы */
 .card h1, .card h2, .card h3 { color: var(--fiverr-green) !important; margin:0 0 8px 0 !important; }
+
+/* Нижнее меню цифр */
+.tab.pagination label {
+  display:inline-block;
+  padding:6px 10px;
+  margin:2px;
+  border:1px solid #e6e6e6;
+  border-radius:6px;
+  background:#fff;
+  cursor:pointer;
+  font-weight:500;
+  transition: all 0.18s ease;
+}
+
+.tab.pagination label:hover {
+  transform: translateY(-2px);
+  border-color: var(--fiverr-green);
+  color: var(--fiverr-green);
+  background:#f0fff8;
+}
+
+/* Подсветка активной цифры */
+#tab-btn-1:checked ~ .tab.pagination label[for="tab-btn-1"],
+#tab-btn-2:checked ~ .tab.pagination label[for="tab-btn-2"],
+#tab-btn-3:checked ~ .tab.pagination label[for="tab-btn-3"],
+#tab-btn-4:checked ~ .tab.pagination label[for="tab-btn-4"] {
+  background: var(--fiverr-green);
+  color:#fff;
+  border-color: var(--fiverr-green);
+}
+
 </style>
 
 
 
 
+<!-- Нижнее меню табов в конце страницы -->
+<div class="tab pagination">
+  <label for="tab-btn-1">1</label>
+  <label for="tab-btn-2">2</label>
+  <label for="tab-btn-3">3</label>
+  <label for="tab-btn-4">4</label>
+</div>
 
 
 
